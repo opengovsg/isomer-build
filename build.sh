@@ -3,7 +3,7 @@
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
-curl https://raw.githubusercontent.com/isomerpages/isomer-build/master/netlify.toml -o /opt/build/repo/netlify.toml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/netlify.toml -o /opt/build/repo/netlify.toml
 
 ###############################
 # Define the RUBY_ENVIRONMENT #
