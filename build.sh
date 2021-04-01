@@ -5,11 +5,6 @@
 #################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/netlify.toml -o /opt/build/repo/netlify.toml
 
-###############################
-# Define the RUBY_ENVIRONMENT #
-###############################
-RUBY_ENVIRONMENT=2.6.2
-
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
 ###############################################################
