@@ -37,6 +37,8 @@
         https://connect.facebook.net 
         https://www.googletagmanager.com 
         https://*.licdn.com 
+        https://webchat.vica.gov.sg 
+        https://vica.gov.sg
         ; 
       object-src 
         'self'
@@ -50,6 +52,8 @@
         https://*.wogaa.sg 
         https://cdnjs.cloudflare.com 
         https://datagovsg.github.io 
+        https://webchat.vica.gov.sg 
+        https://vica.gov.sg
         ; 
       img-src 
         *
@@ -67,6 +71,7 @@
         https://checkfirst.gov.sg 
         https://www.checkfirst.gov.sg 
         https://docs.google.com 
+        https://nlb.ap.panopto.com
         ; 
       frame-ancestors 
         'none'
