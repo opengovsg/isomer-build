@@ -10,6 +10,11 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/netlify.tom
 ###################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/_config-override.yml
 
+#####################################################
+# Delete custom plugins from _plugins folder if any #
+#####################################################
+rm -rf _plugins
+
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
 ###############################################################
