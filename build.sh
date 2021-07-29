@@ -15,6 +15,16 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_
 #####################################################
 rm -rf _plugins
 
+#################################################
+# Check that Gemfile has not been tampered with #
+#################################################
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o Gemfile-template
+diff_line_count_gemfile =$(diff Gemfile Gemfile-template | wc -l)
+if (( diff_line_count_gemfile > 0 )); then
+  echo "Gemfile was tampered with"
+  exit 1
+fi
+
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
 ###############################################################
