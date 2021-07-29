@@ -8,7 +8,7 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/n
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
@@ -18,8 +18,8 @@ rm -rf _plugins
 #################################################
 # Check that Gemfile has not been tampered with #
 #################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o Gemfile-template
-diff_line_count_gemfile =$(diff Gemfile Gemfile-template | wc -l)
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o /opt/build/repo/Gemfile-template
+diff_line_count_gemfile =$(diff /opt/build/repo/Gemfile /opt/build/repo/Gemfile-template | wc -l)
 if (( diff_line_count_gemfile > 0 )); then
   echo "Gemfile was tampered with"
   exit 1
