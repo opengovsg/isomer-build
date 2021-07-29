@@ -5,6 +5,11 @@
 #################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/netlify.toml -o /opt/build/repo/netlify.toml
 
+###################################################################
+# Obtain config override file to enforce plugins and remote theme #
+###################################################################
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/_config-override.yml
+
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
 ###############################################################
@@ -22,4 +27,4 @@ while getopts "e:" opt; do
 done
 
 # netlify build
-JEKYLL_ENV=$env jekyll build --config _config.yml",$var"
+JEKYLL_ENV=$env jekyll build --config _config.yml",$var",_config-override.yml
