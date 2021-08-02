@@ -19,7 +19,7 @@ rm -rf _plugins
 # Check that Gemfile has not been tampered with #
 #################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o /opt/build/repo/Gemfile-template
-diff_line_count_gemfile =$(diff /opt/build/repo/Gemfile /opt/build/repo/Gemfile-template | wc -l)
+diff_line_count_gemfile=$(diff /opt/build/repo/Gemfile /opt/build/repo/Gemfile-template | wc -l)
 if (( diff_line_count_gemfile > 0 )); then
   echo "Gemfile was tampered with"
   exit 1
