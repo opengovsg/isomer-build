@@ -1,0 +1,11 @@
+# Whitelisted plugins
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Approved remote_theme
+remote_theme: isomerpages/isomerpages-template@next-gen
+safe: false
