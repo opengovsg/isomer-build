@@ -3,12 +3,12 @@
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/netlify.toml -o /opt/build/repo/netlify.toml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/test/overrides/netlify.toml -o /opt/build/repo/netlify.toml
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/test/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
@@ -18,7 +18,7 @@ rm -rf _plugins
 #################################################
 # Check that Gemfile has not been tampered with #
 #################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o /opt/build/repo/Gemfile-template
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/test/overrides/Gemfile -o /opt/build/repo/Gemfile-template
 diff_line_count_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-template | wc -l)
 if (( diff_line_count_gemfile > 0 )); then
   echo "Gemfile was tampered with"
@@ -42,4 +42,4 @@ while getopts "e:" opt; do
 done
 
 # netlify build
-JEKYLL_ENV=$env jekyll build --config _config.yml",$var",_config-override.yml
+JEKYLL_ENV=$env jekyll build --config _config.yml",$var",/opt/build/repo/_config-override.yml
