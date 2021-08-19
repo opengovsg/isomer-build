@@ -15,12 +15,16 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_
 #####################################################
 rm -rf _plugins
 
-#################################################
-# Check that Gemfile has not been tampered with #
-#################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile -o /opt/build/repo/Gemfile-template
-diff_line_count_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-template | wc -l)
-if (( diff_line_count_gemfile > 0 )); then
+##################################################
+# Check that Gemfile has not been tampered with. #
+# The Gemfile can either reference isomer-jekyll #
+# or github-pages                                #
+##################################################
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-github-pages -o /opt/build/repo/Gemfile-github-pages
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o /opt/build/repo/Gemfile-isomer-jekyll
+diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-github-pages | wc -l)
+diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
+if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
   echo "Gemfile was tampered with"
   exit 1
 fi
