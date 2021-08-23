@@ -1,5 +1,13 @@
 #!/bin/bash 
 
+################################################
+# Check repo is running on isomer v2 template. #
+################################################
+if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
+  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+  exit 1
+fi
+
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
