@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/n
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master-no-version-check/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
