@@ -7,7 +7,7 @@ for entry in /opt/build/repo/*
 do
   echo "$entry"
 done
-if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
+if ! grep -Fxq "isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
   echo "$(cat /opt/build/repo/_config.yml)"
   echo "$1 is not on isomerpages/isomerpages-template@next-gen"
 #  exit 1
