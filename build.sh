@@ -54,4 +54,4 @@ while getopts "e:" opt; do
 done
 
 # netlify build
-JEKYLL_ENV=$env jekyll build --config _config.yml",$var",/opt/build/repo/_config-override.yml
+JEKYLL_ENV=$env git lfs install && jekyll build --config _config.yml",$var",/opt/build/repo/_config-override.yml
