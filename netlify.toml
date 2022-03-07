@@ -52,7 +52,7 @@
         wss://*.zopim.com
         ; 
       object-src 
-        'self'
+        'none'
         ; 
       style-src 
         'self' 
