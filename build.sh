@@ -44,14 +44,5 @@ fi
 collections=$(find . -path ./_site -prune -false -o -name collection.yml -type f)
 var=$(echo $collections | sed 's/ .\//,.\//g')
 
-env='development'
-while getopts "e:" opt; do
-  case $opt in
-    e) env=$OPTARG      ;;
-    *) echo 'error' >&2
-       exit 1
-  esac
-done
-
-# netlify build
-JEKYLL_ENV=$env git lfs install && bundle exec jekyll build --config _config.yml",$var",_config-override.yml
+# Amplify build
+git lfs install && bundle exec jekyll build --config _config.yml",$var",_config-override.yml
