@@ -44,5 +44,14 @@ fi
 collections=$(find . -path ./_site -prune -false -o -name collection.yml -type f)
 var=$(echo $collections | sed 's/ .\//,.\//g')
 
+#################################
+# Install git lfs, if available #
+#################################
+if git lfs install; then
+  echo "git lfs installed"
+else
+  echo "git lfs not installed"
+fi
+
 # Amplify build
-git lfs install && bundle exec jekyll build --config _config.yml",$var",_config-override.yml
+bundle exec jekyll build --config _config.yml",$var",_config-override.yml
