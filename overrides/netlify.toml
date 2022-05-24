@@ -48,6 +48,7 @@
         https://ekr.zdassets.com
         https://*.zendesk.com
         https://*.zopim.com
+        https://www.instagram.com
         wss://*.zendesk.com
         wss://*.zopim.com
         ; 
@@ -87,6 +88,10 @@
         https://www.google.com/recaptcha/
         https://www.gstatic.com/recaptcha/
         https://data.gov.sg
+        https://calendar.google.com
+        https://www.facebook.com
+        https://m.facebook.com/
+        https://www.instagram.com
         ; 
       frame-ancestors 
         'none'
