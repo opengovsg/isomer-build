@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/n
 ###############################################################################
 # Override Amplify's customHttp.yml with centrally-hosted customHttp.yml file #
 ###############################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify-bug/overrides/customHttp.yml -o customHttp.yml
 # debug customHttp.yml
 cat customHttp.yml
 
