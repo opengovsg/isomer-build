@@ -14,10 +14,9 @@ fi
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o _config-override.yml
 
 # debug find a tool that can parse and write yml files
-which node
-which python
-which python3
-which yq
+yum -y install yq
+yum -y install yq
+
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
