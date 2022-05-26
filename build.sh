@@ -14,8 +14,12 @@ fi
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o _config-override.yml
 
 # debug find a tool that can parse and write yml files
-yum -y install yq
-yum -y install yq
+sudo yum -y install yq
+sudo yum -y install yq
+sudo yum list available | grep yq
+sudo yum installed
+python --version
+python3 --version
 
 
 #####################################################
