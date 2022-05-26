@@ -8,18 +8,16 @@ if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config
   exit 1
 fi
 
+#####################################################################
+# Override customHttp.yml with centrally-hosted customHttp.yml file #
+#####################################################################
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o /opt/build/repo/customHttp.yml
+
+
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o _config-override.yml
-
-# debug find a tool that can parse and write yml files
-sudo yum -y install yq
-sudo yum -y install yq
-sudo yum list available | grep yq
-sudo yum installed
-python --version
-python3 --version
 
 
 #####################################################
