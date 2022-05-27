@@ -10,6 +10,8 @@ customHeaders:
         value: nosniff
       - key: X-Frame-Options
         value: deny
+      - key: Strict-Transport-Security
+        value: max-age=31536000; includeSubDomains; preload
       - key: Content-Security-Policy
         # Amplify requires all lines in a multi-line string to have the same indentation.
         value: >-
