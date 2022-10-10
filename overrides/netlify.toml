@@ -51,6 +51,8 @@
         https://www.instagram.com
         wss://*.zendesk.com
         wss://*.zopim.com
+        https://www.googleadservices.com
+        https://googleads.g.doubleclick.net
         ; 
       object-src 
         'self'
