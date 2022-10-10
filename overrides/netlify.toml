@@ -53,6 +53,7 @@
         wss://*.zopim.com
         https://www.googleadservices.com
         https://googleads.g.doubleclick.net
+        https://www.google.com
         ; 
       object-src 
         'self'
