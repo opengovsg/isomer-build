@@ -28,6 +28,9 @@
         https://*.wogaa.sg 
         https://assets.adobedtm.com 
         https://www.google-analytics.com 
+        https://www.googleadservices.com
+        https://googleads.g.doubleclick.net
+        https://www.google.com
         https://cdnjs.cloudflare.com 
         https://va.ecitizen.gov.sg 
         https://*.cloudfront.net 
@@ -51,9 +54,6 @@
         https://www.instagram.com
         wss://*.zendesk.com
         wss://*.zopim.com
-        https://www.googleadservices.com
-        https://googleads.g.doubleclick.net
-        https://www.google.com
         ; 
       object-src 
         'self'
