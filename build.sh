@@ -6,6 +6,12 @@
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
 
 
+###################################################################
+# Obtain config override file to enforce plugins and remote theme #
+###################################################################
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify-disable-next-gen-check/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
+
+
 #####################################################
 # Delete custom plugins from _plugins folder if any #
 #####################################################
