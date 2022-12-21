@@ -100,6 +100,7 @@ customHeaders:
           ; 
           connect-src 
           'self' 
+          https://5lofs0ghs0.execute-api.ap-southeast-1.amazonaws.com # For testing with Vault-workspace
           https://dpm.demdex.net 
           https://www.google-analytics.com 
           https://stats.g.doubleclick.net 
