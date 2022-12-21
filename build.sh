@@ -3,7 +3,7 @@
 #####################################################################
 # Override customHttp.yml with centrally-hosted customHttp.yml file #
 #####################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify-disable-next-gen-check/overrides/customHttp.yml -o customHttp.yml
 
 
 #####################################################
