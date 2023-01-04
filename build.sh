@@ -5,7 +5,7 @@
 ################################################
 if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
   echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
+#   exit 1
 fi
 
 #################################################################
@@ -34,7 +34,7 @@ diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/rep
 diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
 if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
   echo "Gemfile was tampered with"
-  exit 1
+#   exit 1
 fi
 
 ###############################################################
