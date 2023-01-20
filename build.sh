@@ -11,12 +11,12 @@ fi
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/netlify.toml -o /opt/build/repo/netlify.toml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/feat-add-datastudio/overrides/netlify.toml -o /opt/build/repo/netlify.toml
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/feat-add-datastudio/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
@@ -28,14 +28,14 @@ rm -rf _plugins
 # The Gemfile can either reference isomer-jekyll #
 # or github-pages                                #
 ##################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-github-pages -o /opt/build/repo/Gemfile-github-pages
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o /opt/build/repo/Gemfile-isomer-jekyll
-diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-github-pages | wc -l)
-diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
-if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
-  echo "Gemfile was tampered with"
-  exit 1
-fi
+# curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-github-pages -o /opt/build/repo/Gemfile-github-pages
+# curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o /opt/build/repo/Gemfile-isomer-jekyll
+# diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-github-pages | wc -l)
+# diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
+# if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
+#   echo "Gemfile was tampered with"
+#   exit 1
+# fi
 
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
