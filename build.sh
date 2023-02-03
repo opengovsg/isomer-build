@@ -8,11 +8,6 @@ if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/bu
   exit 1
 fi
 
-#################################################################
-# Override netlify.toml with centrally-hosted netlify.toml file #
-#################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/netlify.toml -o /opt/build/repo/netlify.toml
-
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
