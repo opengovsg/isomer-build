@@ -8,12 +8,6 @@ if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config
   exit 1
 fi
 
-#####################################################################
-# Override customHttp.yml with centrally-hosted customHttp.yml file #
-#####################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
-
-
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
