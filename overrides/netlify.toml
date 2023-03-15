@@ -11,6 +11,7 @@
 [build.processing.images]
   compress = true
 [[headers]]
+  # Changes to this section should be copied to overrides/customHttp.yml in the amplify branch. 
   for = "/*"
   [headers.values]
     X-XSS-Protection = "1; mode=block"
