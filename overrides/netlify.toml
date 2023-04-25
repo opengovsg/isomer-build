@@ -52,6 +52,7 @@
         https://www.instagram.com
         wss://*.zendesk.com
         wss://*.zopim.com
+        sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc=
         ; 
       object-src 
         'self'
