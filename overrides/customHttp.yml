@@ -131,3 +131,5 @@ customHeaders:
           ;
       - key: Accept-Encoding
         value: identity
+      - key: Cache-Control
+        value: no-transform
