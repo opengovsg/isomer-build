@@ -1,6 +1,6 @@
-# Changes to this file should be copied to overrides/netlify.toml in the master branch.  
+# Changes to this file should be copied to overrides/netlify.toml in the master branch.
 customHeaders:
-  - pattern: '**/*'
+  - pattern: "**/*"
     headers:
       - key: X-XSS-Protection
         value: 1; mode=block
@@ -129,3 +129,5 @@ customHeaders:
           wss://*.zendesk.com
           wss://*.zopim.com
           ;
+      - key: Cache-Control
+        value: no-transform
