@@ -129,5 +129,5 @@ customHeaders:
           wss://*.zendesk.com
           wss://*.zopim.com
           ;
-      - key: Cache-Control
-        value: no-transform
+      - key: Accept-Encoding
+        value: identity
