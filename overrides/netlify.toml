@@ -110,7 +110,7 @@
         'self' 
         https://dpm.demdex.net 
         https://*.google-analytics.com
-        https://*.analytics.google.com
+        https://analytics.google.com
         https://*.googletagmanager.com
         https://stats.g.doubleclick.net 
         https://*.wogaa.sg 
