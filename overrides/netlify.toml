@@ -60,6 +60,7 @@
       style-src 
         'self' 
         'unsafe-inline'
+        https://*.googletagmanager.com
         https://fonts.googleapis.com/ 
         https://*.cloudfront.net 
         https://va.ecitizen.gov.sg 
