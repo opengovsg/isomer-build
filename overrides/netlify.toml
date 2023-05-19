@@ -25,7 +25,6 @@
       script-src 
         'self' 
         'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
-        'sha256-177057CBE0F758BD5787908DF8B1ABD2A58D3535A3690A3BF5E4FA9F1058426F'
         blob: 
         https://assets.dcube.cloud 
         https://*.wogaa.sg 
