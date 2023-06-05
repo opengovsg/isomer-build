@@ -24,6 +24,7 @@
         ; 
       script-src 
         'self' 
+        'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
         blob: 
         https://assets.dcube.cloud 
         https://*.wogaa.sg 
@@ -39,7 +40,7 @@
         https://graph.facebook.com 
         https://facebook.com 
         https://www.facebook.com 
-        https://www.googletagmanager.com 
+        https://*.googletagmanager.com 
         https://*.licdn.com 
         https://webchat.vica.gov.sg 
         https://vica.gov.sg
@@ -108,7 +109,9 @@
       connect-src 
         'self' 
         https://dpm.demdex.net 
-        https://www.google-analytics.com 
+        https://*.google-analytics.com
+        https://analytics.google.com
+        https://*.googletagmanager.com 
         https://stats.g.doubleclick.net 
         https://*.wogaa.sg 
         https://va.ecitizen.gov.sg 
