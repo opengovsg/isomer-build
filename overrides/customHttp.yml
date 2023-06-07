@@ -95,6 +95,7 @@ customHeaders:
           https://www.facebook.com
           https://m.facebook.com/
           https://www.instagram.com
+          https://filtable.vercel.app
           ; 
           frame-ancestors 
           'none'
