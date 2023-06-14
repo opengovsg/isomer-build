@@ -139,6 +139,7 @@
         https://*.zendesk.com
         https://*.zopim.com
         https://go.ask.gov.sg
+        https://go-staging.ask.gov.sg
         https://rum.browser-intake-datadoghq.com
         wss://*.zendesk.com
         wss://*.zopim.com
