@@ -48,6 +48,7 @@ customHeaders:
           https://*.zendesk.com
           https://*.zopim.com
           https://www.instagram.com
+          https://script.wiz.gov.sg/widget.js
           wss://*.zendesk.com
           wss://*.zopim.com
           ; 
@@ -66,6 +67,7 @@ customHeaders:
           https://webchat.vica.gov.sg 
           https://vica.gov.sg
           https://unpkg.com
+          https://script.wiz.gov.sg/widget.css
           ; 
           img-src 
           *
@@ -129,6 +131,7 @@ customHeaders:
           https://ekr.zdassets.com
           https://*.zendesk.com
           https://*.zopim.com
+          https://go.ask.gov.sg
           wss://*.zendesk.com
           wss://*.zopim.com
           ;
