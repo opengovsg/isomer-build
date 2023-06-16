@@ -97,6 +97,7 @@ customHeaders:
           https://www.facebook.com
           https://m.facebook.com/
           https://www.instagram.com
+          https://api.id.gov.sg/
           ; 
           frame-ancestors 
           'none'
