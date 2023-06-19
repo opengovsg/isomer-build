@@ -132,7 +132,7 @@ customHeaders:
           https://ekr.zdassets.com
           https://*.zendesk.com
           https://*.zopim.com
-          https://go.ask.gov.sg
+          https://ask.gov.sg
           wss://*.zendesk.com
           wss://*.zopim.com
           ;
