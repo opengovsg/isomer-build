@@ -138,6 +138,7 @@
         https://*.zendesk.com
         https://*.zopim.com
         https://ask.gov.sg
+        https://staging.ask.gov.sg
         wss://*.zendesk.com
         wss://*.zopim.com
         ;
