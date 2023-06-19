@@ -11,7 +11,7 @@ fi
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/netlify.toml -o /opt/build/repo/netlify.toml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/wizgov-netlify/overrides/netlify.toml -o /opt/build/repo/netlify.toml
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
