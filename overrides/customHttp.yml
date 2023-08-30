@@ -18,6 +18,7 @@ customHeaders:
         value: >-
           default-src 
           'self'
+          https://*.dcube.cloud
           ; 
           script-src 
           'self' 
@@ -52,6 +53,7 @@ customHeaders:
           https://script-staging.wiz.gov.sg/widget.js
           wss://*.zendesk.com
           wss://*.zopim.com
+          https://*.dcube.cloud
           ; 
           object-src 
           'self'
@@ -70,6 +72,7 @@ customHeaders:
           https://unpkg.com
           https://script.wiz.gov.sg/widget.css
           https://script-staging.wiz.gov.sg/widget.css
+          https://*.dcube.cloud
           ; 
           img-src 
           *
@@ -138,4 +141,5 @@ customHeaders:
           https://staging.ask.gov.sg
           wss://*.zendesk.com
           wss://*.zopim.com
+          https://*.dcube.cloud
           ;
