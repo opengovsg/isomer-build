@@ -72,7 +72,7 @@ customHeaders:
           https://unpkg.com
           https://script.wiz.gov.sg/widget.css
           https://script-staging.wiz.gov.sg/widget.css
-          https://*.dcube.cloud
+          https://assets.dcube.cloud
           ; 
           img-src 
           *
