@@ -21,7 +21,7 @@
     Content-Security-Policy = """
       default-src 
         'self'
-        https://*.dcube.cloud
+        https://*.dcube.cloud/
         ; 
       script-src 
         'self' 
@@ -56,7 +56,7 @@
         https://script-staging.wiz.gov.sg/widget.js
         wss://*.zendesk.com
         wss://*.zopim.com
-        https://*.dcube.cloud
+        https://*.dcube.cloud/
         ; 
       object-src 
         'self'
@@ -75,7 +75,7 @@
         https://unpkg.com
         https://script.wiz.gov.sg/widget.css
         https://script-staging.wiz.gov.sg/widget.css
-        https://assets.dcube.cloud
+        https://assets.dcube.cloud/
         ; 
       img-src 
         *
@@ -146,6 +146,6 @@
         https://staging.ask.gov.sg
         wss://*.zendesk.com
         wss://*.zopim.com
-        https://*.dcube.cloud
+        https://*.dcube.cloud/
         ;
       """
