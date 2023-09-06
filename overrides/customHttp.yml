@@ -54,6 +54,7 @@ customHeaders:
           wss://*.zendesk.com
           wss://*.zopim.com
           https://*.dcube.cloud/
+          https://console-flex-api.ap.sabio.cloud
           ; 
           object-src 
           'self'
@@ -73,6 +74,7 @@ customHeaders:
           https://script.wiz.gov.sg/widget.css
           https://script-staging.wiz.gov.sg/widget.css
           https://assets.dcube.cloud/
+          https://console-flex-api.ap.sabio.cloud
           ; 
           img-src 
           *
@@ -142,4 +144,5 @@ customHeaders:
           wss://*.zendesk.com
           wss://*.zopim.com
           https://*.dcube.cloud/
+          https://console-flex-api.ap.sabio.cloud
           ;
