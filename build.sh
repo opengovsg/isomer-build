@@ -1,12 +1,12 @@
-#!/bin/bash 
+#!/bin/bash
 
 ################################################
 # Check repo is running on isomer v2 template. #
 ################################################
-if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
-  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
-fi
+# if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
+#   echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+#   exit 1
+# fi
 
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/n
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/master-next-gen-staging/overrides/_config-override.yml -o /opt/build/repo/_config-override.yml
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
