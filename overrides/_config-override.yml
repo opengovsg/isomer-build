@@ -9,3 +9,5 @@ plugins:
 # Approved remote_theme
 remote_theme: isomerpages/isomerpages-template@next-gen-staging
 safe: false
+sass:
+  style: compressed
