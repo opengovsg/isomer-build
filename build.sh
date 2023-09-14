@@ -1,23 +1,23 @@
-#!/bin/bash 
+#!/bin/bash
 
 ################################################
 # Check repo is running on isomer v2 template. #
 ################################################
-if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config.yml; then
-  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
-fi
+# if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config.yml; then
+#   echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+#   exit 1
+# fi
 
 #####################################################################
 # Override customHttp.yml with centrally-hosted customHttp.yml file #
 #####################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/zhongjun-test/overrides/customHttp.yml -o customHttp.yml
 
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o _config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/zhongjun-test/overrides/_config-override.yml -o _config-override.yml
 
 
 #####################################################
