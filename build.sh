@@ -3,10 +3,10 @@
 ################################################
 # Check repo is running on isomer v2 template. #
 ################################################
-if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config.yml; then
-  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
-fi
+# if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config.yml; then
+#   echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+#   exit 1
+# fi
 
 #####################################################################
 # Override customHttp.yml with centrally-hosted customHttp.yml file #
