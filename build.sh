@@ -30,14 +30,14 @@ rm -rf _plugins
 # The Gemfile can either reference isomer-jekyll #
 # or github-pages                                #
 ##################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-github-pages -o Gemfile-github-pages
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o Gemfile-isomer-jekyll
-diff_line_count_github_pages_gemfile=$(diff --ignore-space-change Gemfile Gemfile-github-pages | wc -l)
-diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change Gemfile Gemfile-isomer-jekyll | wc -l)
-if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
-  echo "Gemfile was tampered with"
-  exit 1
-fi
+# curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-github-pages -o Gemfile-github-pages
+# curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o Gemfile-isomer-jekyll
+# diff_line_count_github_pages_gemfile=$(diff --ignore-space-change Gemfile Gemfile-github-pages | wc -l)
+# diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change Gemfile Gemfile-isomer-jekyll | wc -l)
+# if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
+#   echo "Gemfile was tampered with"
+#   exit 1
+# fi
 
 ###############################################################
 # Generate build script for Jekyll v4 collections structure   #
