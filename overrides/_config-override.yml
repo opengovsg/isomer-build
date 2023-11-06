@@ -2,7 +2,7 @@
 plugins:
   - jekyll-feed
   - jekyll-assets
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-remote-theme
 
