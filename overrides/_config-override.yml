@@ -7,7 +7,7 @@ plugins:
   - jekyll-remote-theme
 
 # Approved remote_theme
-remote_theme: isomerpages/isomerpages-template@IS-729-search
+remote_theme: isomerpages/isomerpages-template@egaz-search
 safe: false
 sass:
   style: compressed
