@@ -23,6 +23,7 @@ customHeaders:
           script-src 
           'self' 
           'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
+          'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
           blob: 
           https://assets.dcube.cloud 
           https://*.wogaa.sg 
@@ -55,6 +56,7 @@ customHeaders:
           wss://*.zopim.com
           https://*.dcube.cloud/
           https://console-flex-api.ap.sabio.cloud
+          https://cdn.jsdelivr.net #algolia-testing
           ; 
           object-src 
           'self'
