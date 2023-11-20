@@ -58,6 +58,8 @@
         wss://*.zopim.com
         https://*.dcube.cloud/
         https://console-flex-api.ap.sabio.cloud
+        https://cdn.jsdelivr.net/npm/algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js
+        https://cdn.jsdelivr.net/npm/instantsearch.js@4.60.0/dist/instantsearch.production.min.js
         ; 
       object-src 
         'self'
@@ -78,6 +80,7 @@
         https://script-staging.wiz.gov.sg/widget.css
         https://assets.dcube.cloud/
         https://console-flex-api.ap.sabio.cloud
+        https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css
         ; 
       img-src 
         *
@@ -150,5 +153,6 @@
         wss://*.zopim.com
         https://*.dcube.cloud/
         https://console-flex-api.ap.sabio.cloud
+        https://1v7dzgzjkk-1.algolianet.com/
         ;
       """
