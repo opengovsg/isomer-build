@@ -11,13 +11,13 @@
 #####################################################################
 # Override customHttp.yml with centrally-hosted customHttp.yml file #
 #####################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/zhongjun-test/overrides/customHttp.yml -o customHttp.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/kishore-test/overrides/customHttp.yml -o customHttp.yml
 
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/zhongjun-test/overrides/_config-override.yml -o _config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/kishore-test/overrides/_config-override.yml -o _config-override.yml
 
 
 #####################################################
