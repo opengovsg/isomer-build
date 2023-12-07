@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify-next-gen-staging/overrides/_config-override.yml -o _config-override.yml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/legacy-test/overrides/_config-override.yml -o _config-override.yml
 
 
 #####################################################

@@ -7,7 +7,7 @@ plugins:
   - jekyll-remote-theme
 
 # Approved remote_theme
-remote_theme: isomerpages/isomerpages-template@next-gen-staging
+remote_theme: isomerpages/isomerpages-template@legacy-test
 safe: false
 sass:
   style: compressed
