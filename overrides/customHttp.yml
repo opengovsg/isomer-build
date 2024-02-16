@@ -91,6 +91,7 @@ customHeaders:
           https://*.youtube.com 
           https://*.youtube-nocookie.com 
           https://*.vimeo.com 
+          https://vimeo.com
           https://www.google.com 
           https://checkfirst.gov.sg 
           https://www.checkfirst.gov.sg 
