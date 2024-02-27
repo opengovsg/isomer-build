@@ -145,4 +145,5 @@ customHeaders:
           wss://*.zopim.com
           https://*.dcube.cloud/
           https://console-flex-api.ap.sabio.cloud
+          https://35q3y4991j.execute-api.ap-southeast-1.amazonaws.com
           ;
