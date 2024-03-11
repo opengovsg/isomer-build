@@ -152,4 +152,5 @@ customHeaders:
           https://console-flex-api.ap.sabio.cloud
           https://authmiddleware.ap.sabio.cloud
           https://1v7dzgzjkk-1.algolianet.com/
+          https://unpkg.com/lunr/lunr.js
           ;
