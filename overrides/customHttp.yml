@@ -153,4 +153,5 @@ customHeaders:
           https://authmiddleware.ap.sabio.cloud
           https://1v7dzgzjkk-1.algolianet.com/
           https://35q3y4991j.execute-api.ap-southeast-1.amazonaws.com
+          https://unpkg.com/lunr/lunr.js
           ;
