@@ -55,5 +55,4 @@ else
   echo "git lfs not installed"
 fi
 
-# Amplify build
-bundle exec jekyll build --config _config.yml",$var",_config-override.yml
+bundle exec jekyll serve --config _config.yml",$var",_config-override.yml
