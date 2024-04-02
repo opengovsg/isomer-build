@@ -23,6 +23,7 @@ customHeaders:
           script-src 
           'self' 
           'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
+          'sha256-nWKjNpDy9BIIH8p69UATrM+dYfeHm3RCw7s03nOoDC0=' # New GTM inline script
           blob: 
           https://assets.dcube.cloud 
           https://*.wogaa.sg 
