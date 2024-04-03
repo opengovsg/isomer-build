@@ -34,6 +34,7 @@ customHeaders:
           https://*.cloudfront.net 
           https://printjs-4de6.kxcdn.com 
           https://unpkg.com 
+          https://unpkg.com/web-vitals
           https://wogadobeanalytics.sc.omtrdc.net 
           https://connect.facebook.net 
           https://graph.facebook.com 
