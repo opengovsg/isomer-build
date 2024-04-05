@@ -22,7 +22,7 @@ customHeaders:
           ; 
           script-src 
           'self' 
-          'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
+          'sha256-nWKjNpDy9BIIH8p69UATrM+dYfeHm3RCw7s03nOoDC0=' # Script for GTM tag
           blob: 
           https://assets.dcube.cloud 
           https://*.wogaa.sg 
@@ -33,6 +33,7 @@ customHeaders:
           https://*.cloudfront.net 
           https://printjs-4de6.kxcdn.com 
           https://unpkg.com 
+          https://unpkg.com/web-vitals
           https://wogadobeanalytics.sc.omtrdc.net 
           https://connect.facebook.net 
           https://graph.facebook.com 
