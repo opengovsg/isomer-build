@@ -1,6 +1,6 @@
-# Changes to this file should be copied to overrides/netlify.toml in the master branch.  
+# Changes to this file should be copied to overrides/netlify.toml in the master branch.
 customHeaders:
-  - pattern: '**/*'
+  - pattern: "**/*"
     headers:
       - key: X-XSS-Protection
         value: 1; mode=block
@@ -145,4 +145,6 @@ customHeaders:
           wss://*.zopim.com
           https://*.dcube.cloud/
           https://console-flex-api.ap.sabio.cloud
+          https://1v7dzgzjkk.algolianet.com/
+          https://1v7dzgzjkk-*.algolianet.com/
           ;
