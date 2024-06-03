@@ -56,4 +56,5 @@ while getopts "e:" opt; do
 done
 
 # netlify build
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/fix-ruby/.ruby-version -o /opt/build/repo/.ruby-version
 JEKYLL_ENV=$env jekyll build --trace --config _config.yml",$var",/opt/build/repo/_config-override.yml
