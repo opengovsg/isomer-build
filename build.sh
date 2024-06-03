@@ -1,11 +1,11 @@
-#!/bin/bash 
+#!/bin/bash
 
 ################################################
 # Check repo is running on isomer v2 template. #
 ################################################
-if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
-  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
+if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@fix-ruby" /opt/build/repo/_config.yml; then
+	echo "$1 is not on isomerpages/isomerpages-template@fix-ruby"
+	exit 1
 fi
 
 #################################################################
@@ -32,9 +32,9 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/G
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o /opt/build/repo/Gemfile-isomer-jekyll
 diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-github-pages | wc -l)
 diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
-if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
-  echo "Gemfile was tampered with"
-  exit 1
+if ((diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0)); then
+	echo "Gemfile was tampered with"
+	exit 1
 fi
 
 ###############################################################
@@ -46,11 +46,13 @@ var=$(echo $collections | sed 's/ .\//,.\//g')
 
 env='development'
 while getopts "e:" opt; do
-  case $opt in
-    e) env=$OPTARG      ;;
-    *) echo 'error' >&2
-       exit 1
-  esac
+	case $opt in
+	e) env=$OPTARG ;;
+	*)
+		echo 'error' >&2
+		exit 1
+		;;
+	esac
 done
 
 # netlify build
