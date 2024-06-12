@@ -57,15 +57,17 @@ done
 
 FILE="Gemfile.lock"
 
+# NOTE: we remove the gemfile.lock here
+# because the old sites use the `jekyll build` command
+# and don't refer to the upstream build script
 if [ -f "$FILE" ]; then
 	echo "The file $FILE exists. Removing it."
 	rm "$FILE"
 else
 	echo "The file $FILE does not exist."
-
-	curl "https://raw.githubusercontent.com/isomerpages/isomerpages-template/next-gen/Gemfile.lock"
-
 fi
+
+curl "https://raw.githubusercontent.com/isomerpages/isomerpages-template/next-gen/Gemfile.lock"
 
 bundle install --deployment
 
