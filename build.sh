@@ -1,11 +1,11 @@
-#!/bin/bash 
+#!/bin/bash
 
 ################################################
 # Check repo is running on isomer v2 template. #
 ################################################
 if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" _config.yml; then
-  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-  exit 1
+	echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+	exit 1
 fi
 
 #####################################################################
@@ -13,12 +13,10 @@ fi
 #####################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/amplify/overrides/customHttp.yml -o customHttp.yml
 
-
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
 ###################################################################
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/_config-override.yml -o _config-override.yml
-
 
 #####################################################
 # Delete custom plugins from _plugins folder if any #
@@ -34,9 +32,9 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/G
 curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/Gemfile-isomer-jekyll -o Gemfile-isomer-jekyll
 diff_line_count_github_pages_gemfile=$(diff --ignore-space-change Gemfile Gemfile-github-pages | wc -l)
 diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change Gemfile Gemfile-isomer-jekyll | wc -l)
-if (( diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0 )); then
-  echo "Gemfile was tampered with"
-  exit 1
+if ((diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0)); then
+	echo "Gemfile was tampered with"
+	exit 1
 fi
 
 ###############################################################
@@ -50,10 +48,20 @@ var=$(echo $collections | sed 's/ .\//,.\//g')
 # Install git lfs, if available #
 #################################
 if git lfs install; then
-  echo "git lfs installed"
+	echo "git lfs installed"
 else
-  echo "git lfs not installed"
+	echo "git lfs not installed"
 fi
+
+FILE="Gemfile.lock"
+
+if [ -f "$FILE" ]; then
+	echo "The file $FILE exists. Removing it."
+else
+	echo "The file $FILE does not exist."
+fi
+
+curl "https://raw.githubusercontent.com/isomerpages/isomerpages-template/next-gen/Gemfile.lock"
 
 # Amplify build
 bundle exec jekyll build --config _config.yml",$var",_config-override.yml
