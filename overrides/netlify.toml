@@ -57,6 +57,7 @@
         wss://*.zendesk.com
         wss://*.zopim.com
         https://*.dcube.cloud/
+        https://console.apac.sabio.cloud/
         https://console-flex-api.ap.sabio.cloud
         https://cdn.jsdelivr.net/npm/algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js
         https://cdn.jsdelivr.net/npm/instantsearch.js@4.60.0/dist/instantsearch.production.min.js
