@@ -154,5 +154,7 @@ customHeaders:
           https://*.dcube.cloud/
           https://console-flex-api.ap.sabio.cloud
           https://authmiddleware.ap.sabio.cloud
-          https://1v7dzgzjkk-*.algolianet.com/
+          https://*.algolia.net
+          https://*.algolianet.com
+          https://*.algolia.io
           ;
