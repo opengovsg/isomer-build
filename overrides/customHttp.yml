@@ -78,6 +78,7 @@ customHeaders:
           https://script.wiz.gov.sg/widget.css
           https://script-staging.wiz.gov.sg/widget.css
           https://assets.dcube.cloud/
+          https://console.apac.sabio.cloud/
           https://console-flex-api.ap.sabio.cloud
           https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css
           ; 
@@ -153,6 +154,7 @@ customHeaders:
           wss://*.zopim.com
           https://*.dcube.cloud/
           https://console-flex-api.ap.sabio.cloud
+          https://console.apac.sabio.cloud/
           https://authmiddleware.ap.sabio.cloud
           https://*.algolia.net
           https://*.algolianet.com
