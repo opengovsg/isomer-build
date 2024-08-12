@@ -4,14 +4,14 @@
 # Check repo is running on isomer v2 template. #
 ################################################
 if ! grep -Fxq "remote_theme: isomerpages/isomerpages-template@next-gen" /opt/build/repo/_config.yml; then
-	echo "$1 is not on isomerpages/isomerpages-template@next-gen"
-	exit 1
+  echo "$1 is not on isomerpages/isomerpages-template@next-gen"
+  exit 1
 fi
 
 #################################################################
 # Override netlify.toml with centrally-hosted netlify.toml file #
 #################################################################
-curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/netlify.toml -o /opt/build/repo/netlify.toml
+curl https://raw.githubusercontent.com/opengovsg/isomer-build/netlify-rp/overrides/netlify.toml -o /opt/build/repo/netlify.toml
 
 ###################################################################
 # Obtain config override file to enforce plugins and remote theme #
@@ -33,8 +33,8 @@ curl https://raw.githubusercontent.com/opengovsg/isomer-build/master/overrides/G
 diff_line_count_github_pages_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-github-pages | wc -l)
 diff_line_count_isomer_jekyll_gemfile=$(diff --ignore-space-change /opt/build/repo/Gemfile /opt/build/repo/Gemfile-isomer-jekyll | wc -l)
 if ((diff_line_count_github_pages_gemfile > 0 && diff_line_count_isomer_jekyll_gemfile > 0)); then
-	echo "Gemfile was tampered with"
-	exit 1
+  echo "Gemfile was tampered with"
+  exit 1
 fi
 
 ###############################################################
@@ -46,13 +46,13 @@ var=$(echo $collections | sed 's/ .\//,.\//g')
 
 env='development'
 while getopts "e:" opt; do
-	case $opt in
-	e) env=$OPTARG ;;
-	*)
-		echo 'error' >&2
-		exit 1
-		;;
-	esac
+  case $opt in
+  e) env=$OPTARG ;;
+  *)
+    echo 'error' >&2
+    exit 1
+    ;;
+  esac
 done
 
 FILE="Gemfile.lock"
@@ -61,10 +61,10 @@ FILE="Gemfile.lock"
 # because the old sites use the `jekyll build` command
 # and don't refer to the upstream build script
 if [ -f "$FILE" ]; then
-	echo "The file $FILE exists. Removing it."
-	rm "$FILE"
+  echo "The file $FILE exists. Removing it."
+  rm "$FILE"
 else
-	echo "The file $FILE does not exist."
+  echo "The file $FILE does not exist."
 fi
 
 curl "https://raw.githubusercontent.com/isomerpages/isomerpages-template/next-gen/Gemfile.lock"
