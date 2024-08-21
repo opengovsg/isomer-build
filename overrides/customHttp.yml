@@ -1,11 +1,11 @@
-# Changes to this file should be copied to overrides/netlify.toml in the master branch.  
+# Changes to this file should be copied to overrides/netlify.toml in the master branch.
 customHeaders:
-  - pattern: '**/*'
+  - pattern: "**/*"
     headers:
       - key: X-XSS-Protection
         value: 1; mode=block
       - key: Referrer-Policy
-        value: no-referrer
+        value: strict-origin-when-cross-origin
       - key: X-Content-Type-Options
         value: nosniff
       - key: X-Frame-Options
