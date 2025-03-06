@@ -114,6 +114,7 @@ customHeaders:
           https://m.facebook.com/
           https://www.instagram.com
           https://api.id.gov.sg/
+          https://*.onemap.gov.sg/
           ; 
           frame-ancestors 
           'none'
