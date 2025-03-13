@@ -115,6 +115,8 @@ customHeaders:
           https://www.instagram.com
           https://api.id.gov.sg/
           https://*.onemap.gov.sg/
+          https://maps.hack2025.gov.sg
+          https://maps.gov.sg
           ; 
           frame-ancestors 
           'none'
