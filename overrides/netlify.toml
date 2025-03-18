@@ -26,6 +26,8 @@ Content-Security-Policy = """
       script-src 
         'self' 
         'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
+        https://script-staging.wiz.gov.sg/customs-script.js
+        https://script.wiz.gov.sg/customs-script.js
         blob: 
         https://assets.dcube.cloud 
         https://*.wogaa.sg 
