@@ -23,6 +23,8 @@ customHeaders:
           script-src 
           'self' 
           'sha256-nWKjNpDy9BIIH8p69UATrM+dYfeHm3RCw7s03nOoDC0=' # Script for GTM tag
+          https://script-staging.wiz.gov.sg/customs-script.js
+          https://script.wiz.gov.sg/customs-script.js
           blob: 
           https://assets.dcube.cloud 
           https://*.wogaa.sg 
