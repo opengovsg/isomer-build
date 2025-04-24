@@ -26,6 +26,7 @@ Content-Security-Policy = """
       script-src 
         'self' 
         'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
+        'sha256-jrgkEqFIwhymCeRxfh3RHm2ssvwC2lNerrrYfQZiAMA='
         https://script-staging.wiz.gov.sg/customs-script.js
         https://script.wiz.gov.sg/customs-script.js
         blob: 
@@ -169,5 +170,6 @@ Content-Security-Policy = """
         https://console.apac.sabio.cloud/
         https://authmiddleware.ap.sabio.cloud
         https://1v7dzgzjkk-1.algolianet.com/
+        https://attachments.apac2.webexengage.com/widget/js/imichatinit.js
         ;
       """
