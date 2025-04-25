@@ -90,6 +90,7 @@ customHeaders:
           https://console.apac.sabio.cloud/
           https://console-flex-api.ap.sabio.cloud
           https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css
+          https://attachments.apac2.webexengage.com
           ; 
           img-src 
           *
@@ -125,6 +126,7 @@ customHeaders:
           https://*.onemap.gov.sg/
           https://maps.hack2025.gov.sg
           https://maps.gov.sg
+          https://attachments.apac2.webexengage.com
           ; 
           frame-ancestors 
           'none'
