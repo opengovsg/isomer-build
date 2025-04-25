@@ -27,6 +27,7 @@ Content-Security-Policy = """
         'self' 
         'sha256-7tJzJRhCSII909o84m4q85UWUc5EDMrrjsQXbeH+qlc='
         'sha256-jrgkEqFIwhymCeRxfh3RHm2ssvwC2lNerrrYfQZiAMA='
+        'sha256-E6VSHz7prXjxYy3IswjAT2XLomQQ+UmhLBThJZm+dGs='
         https://script-staging.wiz.gov.sg/customs-script.js
         https://script.wiz.gov.sg/customs-script.js
         blob: 
@@ -65,6 +66,10 @@ Content-Security-Policy = """
         https://console-flex-api.ap.sabio.cloud
         https://cdn.jsdelivr.net/npm/algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js
         https://cdn.jsdelivr.net/npm/instantsearch.js@4.60.0/dist/instantsearch.production.min.js
+        https://attachments.apac2.webexengage.com
+        https://cdn-widget.apac2.webexengage.com
+        https://rtm.sg.webexconnect.io
+        https://widget.apac2.webexengage.com
         ; 
       object-src 
         'self'
@@ -170,6 +175,9 @@ Content-Security-Policy = """
         https://console.apac.sabio.cloud/
         https://authmiddleware.ap.sabio.cloud
         https://1v7dzgzjkk-1.algolianet.com/
-        https://attachments.apac2.webexengage.com/widget/js/imichatinit.js
+        https://attachments.apac2.webexengage.com
+        https://cdn-widget.apac2.webexengage.com
+        https://rtm.sg.webexconnect.io
+        https://widget.apac2.webexengage.com
         ;
       """
