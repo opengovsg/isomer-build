@@ -24,6 +24,7 @@ customHeaders:
           'self' 
           'sha256-nWKjNpDy9BIIH8p69UATrM+dYfeHm3RCw7s03nOoDC0=' # Script for GTM tag
           'sha256-jrgkEqFIwhymCeRxfh3RHm2ssvwC2lNerrrYfQZiAMA=' # Script for WizGov
+          'sha256-E6VSHz7prXjxYy3IswjAT2XLomQQ+UmhLBThJZm+dGs=' # Script for WizGov
           https://script-staging.wiz.gov.sg/customs-script.js
           https://script.wiz.gov.sg/customs-script.js
           blob: 
@@ -63,6 +64,10 @@ customHeaders:
           https://console-flex-api.ap.sabio.cloud/
           https://cdn.jsdelivr.net/npm/algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js
           https://cdn.jsdelivr.net/npm/instantsearch.js@4.60.0/dist/instantsearch.production.min.js
+          https://attachments.apac2.webexengage.com
+          https://cdn-widget.apac2.webexengage.com
+          https://rtm.sg.webexconnect.io
+          https://widget.apac2.webexengage.com
           ; 
           object-src 
           'self'
@@ -167,5 +172,8 @@ customHeaders:
           https://*.algolia.net
           https://*.algolianet.com
           https://*.algolia.io
-          https://attachments.apac2.webexengage.com/widget/js/imichatinit.js
+          https://attachments.apac2.webexengage.com
+          https://cdn-widget.apac2.webexengage.com
+          https://rtm.sg.webexconnect.io
+          https://widget.apac2.webexengage.com
           ;
