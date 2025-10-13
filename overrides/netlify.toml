@@ -59,6 +59,7 @@ Content-Security-Policy = """
         https://www.instagram.com
         https://script.wiz.gov.sg/widget.js
         https://script-staging.wiz.gov.sg/widget.js
+        https://*.ask.gov.sg
         wss://*.zendesk.com
         wss://*.zopim.com
         https://*.dcube.cloud/
@@ -167,6 +168,7 @@ Content-Security-Policy = """
         https://*.zendesk.com
         https://*.zopim.com
         https://ask.gov.sg
+        https://*.ask.gov.sg
         https://staging.ask.gov.sg
         wss://*.zendesk.com
         wss://*.zopim.com
